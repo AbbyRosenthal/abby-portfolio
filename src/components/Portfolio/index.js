@@ -1,15 +1,36 @@
-import React from 'react';
-import { capitalizeFirstLetter } from '../../utils/helper';
+import React, {useState} from 'react';
+import Project from '../Project';
 
-function Portfolio({ currentCategory }) {
+function Portfolio() {
 
-    const {name, description } = currentCategory;
-    
+    const [projects] = useState([
+        {
+            name: "Project One",
+            description: "about project one",
+            image: "Placeholder.png",
+            deployedLink: "www.google.com",
+            repo: "www.github.com/AbbyRosenthal"
+        },
+        {
+            name: "Project TWo",
+            description: "about project one",
+            image: "Placeholder.png",
+            deployedLink: "www.google.com",
+            repo: "www.github.com/AbbyRosenthal"
+        }
+    ]);
+
     return (
         <section>
-        <h1 data-testid="h1tag">{capitalizeFirstLetter(name)}</h1>
-        <p> {description} </p>
-    </section>
+            <div>
+                {projects.map(project =>(
+                    <Project 
+                    project = {project}
+                    key = {project.name}
+                    />
+                ))}
+            </div>
+        </section>
     );
 }
 

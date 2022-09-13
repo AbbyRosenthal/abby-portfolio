@@ -2,67 +2,44 @@ import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helper";
 
 function Nav(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
-  } = props;
+    const {
+        pages = [],
+        setCurrentPage,
+        currentPage,
+    } = props;
 
-
-  const handleClick = (item) => {
-    console.log(item);
-    return item;
-  };
-
-  return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> </span> Abby Rosenthal
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about">
-              About me
-            </a>
-          </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick('Contact')}>
-              Contact
-            </span>
-          </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick('Portfolio')}>
-              Portfolio
-            </span>
-          </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick('Resume')}>
-              Resume
-            </span>
-          </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
-  );
+    return (
+        <div className="flex-row px-1">
+            <nav>
+                <ul className="flex-row">
+                    <li className="mx-2">
+                        <a onClick={() => setCurrentPage(pages[0])}
+                            className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}>
+                            About Me
+                        </a>
+                    </li>
+                    <li className={"mx-2"}>
+                        <a onClick={() => setCurrentPage(pages[1])}
+                        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
+                            Contact
+                        </a>
+                    </li>
+                    <li className={"mx-2"}>
+                        <a onClick={() => setCurrentPage(pages[2])}
+                        className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li className={"mx-2"}>
+                        <a onClick={() => setCurrentPage(pages[3])}
+                        className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div >
+    );
 }
 
 

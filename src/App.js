@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
-import About from './components/About';
 import Nav from './components/Nav';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Page from './components/Page'
 import './App.css';
 
 function App() {
@@ -31,7 +28,9 @@ function App() {
         ></Nav>
       </Header>
       <main>
-        
+        <Page currentPage={currentPage}>
+
+        </Page>
       </main>
       <Footer></Footer>
     </div>
