@@ -11,7 +11,7 @@ function Nav(props) {
     return (
         <div className="flex-row px-1">
             <nav>
-                <ul className="flex-row">
+                <ul className="flex-row nav">
                     <li className="mx-2">
                         <a onClick={() => setCurrentPage(pages[0])}
                             className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}>

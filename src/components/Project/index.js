@@ -5,8 +5,13 @@ export default function Project({ project }) {
 
     return (
         <div key={name}>
-            <p className="project-name">{name} | <a href={deployedLink}>Live Project</a> | <a href={repo}>GitHub Repo</a></p>
-            <img className="project-picture" src={require(`../../assets/Placeholder.png`)} alt={name} />
+            <h1 className="project-name">{name} </h1>
+              <a className="nav-link active" href={deployedLink}>Live Project</a> | <a href={repo}>GitHub Repo</a> 
+              <p> {description} </p> 
+            <img className="project-picture" 
+            //src={require(`../../assets/${image}`)} 
+            alt={name} 
+            />
         </div>
     )
 

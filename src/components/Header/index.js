@@ -4,7 +4,7 @@ export default function Header(props) {
 
     return (
         <header>
-            <h1>Abby Rosenthal</h1> 
+            <h1 className="header-name">Abby Rosenthal</h1> 
             {props.children}
         </header>
     )

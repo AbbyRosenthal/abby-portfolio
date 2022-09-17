@@ -1,3 +1,6 @@
+# DESCRIPTION 
+This project is the personal portfolio for me, Abby Rosenthal, and the work I have completed through the University of Minnesota's coding bootcamp.  The project includes an "About Me" page with a headshot and short bio, it includes active links to a portfolio of my projects and a page to leave info for communication. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
