@@ -20,31 +20,31 @@ function Portfolio() {
         },
         {
             name: "Scheduler",
-            description: "about project one",
-            image: "",
+            description: "Scheduler is a webpage that allows the user to create/delete tasks for their daily plan.  The colors of the time blocks change to reflect future, current and past time slots.",
+            image: "calendar.png",
             deployedLink: "https://abbyrosenthal.github.io/calendar-planner/",
             repo: "https://github.com/AbbyRosenthal/calendar-planner"
         },
         {
-            name: "Project Four",
-            description: "about project one",
-            image: "",
-            deployedLink: "https://www.google.com",
-            repo: "https://www.github.com/AbbyRosenthal"
+            name: "What's the Weather",
+            description: "A weather app to call the forecast for U.S. cities.  First project using API calls. ",
+            image: "weather.png",
+            deployedLink: "https://abbyrosenthal.github.io/whats-the-weather/",
+            repo: "https://github.com/AbbyRosenthal/whats-the-weather"
         },
         {
-            name: "Project Five",
-            description: "about project one",
+            name: "Social Media API",
+            description: "A backend project for a social media API that includes routes to create/delete a user, add friends and comments.",
             image: "",
-            deployedLink: "https://www.google.com",
-            repo: "https://www.github.com/AbbyRosenthal"
+            deployedLink: "",
+            repo: "https://github.com/AbbyRosenthal/social-media-API"
         },
         {
-            name: "Project Six",
-            description: "about project one",
-            image: "",
-            deployedLink: "https://www.google.com",
-            repo: "https://www.github.com/AbbyRosenthal"
+            name: "My First Bio",
+            description: "A project developed early on in the bootcamp process to display my bio and current working projects.",
+            image: "abbybio.png",
+            deployedLink: "https://abbyrosenthal.github.io/abby-bio/",
+            repo: "https://github.com/AbbyRosenthal/abby-bio"
         }
     ]);
 
