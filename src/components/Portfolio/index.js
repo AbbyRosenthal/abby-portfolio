@@ -19,11 +19,11 @@ function Portfolio() {
             repo: "https://github.com/jbradley84/pour-me-another"
         },
         {
-            name: "Scheduler",
-            description: "Scheduler is a webpage that allows the user to create/delete tasks for their daily plan.  The colors of the time blocks change to reflect future, current and past time slots.",
-            image: "calendar.png",
-            deployedLink: "https://abbyrosenthal.github.io/calendar-planner/",
-            repo: "https://github.com/AbbyRosenthal/calendar-planner"
+            name: "Do the Ding Dang Thing",
+            description: "",
+            image: "DDT.png",
+            deployedLink: "https://guarded-taiga-92417.herokuapp.com/",
+            repo: "https://github.com/smith-utxo/do-the-ding-dang-thing"
         },
         {
             name: "What's the Weather",
